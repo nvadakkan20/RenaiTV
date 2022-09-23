@@ -187,7 +187,7 @@ export const getFeaturedPosts = async () => {
       posts(where: {featuredPost: true}) {
         author {
           name
-          photo {
+         photo {
             url
           }
         }

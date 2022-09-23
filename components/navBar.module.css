@@ -1,0 +1,66 @@
+.toggleButton
+{
+
+  position:absolute;
+  top:4rem;
+  right: 2rem;
+  display:none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+
+}
+
+.navLinks
+{
+  display:flex;
+  margin-top: 6;
+  margin-left: 8;
+  float: right;
+}
+
+.navLinks ul{
+
+  display:flex;
+  margin-top: 6;
+  margin-left: 8;
+  float:  right;
+}
+
+
+.toggleButton .bar
+{
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width:639px)
+{
+  .toggleButton
+  {
+    display:flex;
+
+  }
+  .navLinks{
+    display:flex;
+    float: none;
+  }
+
+  .navLinks ul{
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  
+  }
+  .navLinks li{
+    padding: .5rem 1rem;
+  }
+  .navLinks.active{
+    display: flex;
+  }
+ 
+}
+  
